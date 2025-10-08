@@ -12,10 +12,10 @@ function Header() {
       <div className="container d-flex justify-content-between align-items-center flex-wrap">
         <a href="/" className="d-flex align-items-center text-decoration-none">
           <img
-            src="/logo.png"
-            alt="Rolamentos Condo Logo"
-            style={{ height: '40px', marginRight: '12px' }}
-          />
+  src={`${process.env.PUBLIC_URL}/logo.png`}
+  alt="Rolamentos Condo Logo"
+  style={{ height: '40px', marginRight: '12px' }}
+/>
           <h1 className="h4 mb-0 text-dark">WC Rolamentos</h1>
         </a>
         <nav>

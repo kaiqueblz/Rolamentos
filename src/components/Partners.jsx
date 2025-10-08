@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const partners = [
-  { id: 1, name: 'Suzano Papel', logo: '/suzano.png' },
-  { id: 2, name: 'Suzantur', logo: '/suzantur.png' },
-  { id: 3, name: 'Maet', logo: '/maet.png' },
-  { id: 4, name: 'Salute embalagens', logo: '/salute.jpg' },
-  { id: 5, name: 'Aços Vital', logo: '/vital.jpg' },
+  { id: 1, name: 'Suzano Papel', logo: `${process.env.PUBLIC_URL}/suzano.png` },
+  { id: 2, name: 'Suzantur', logo: `${process.env.PUBLIC_URL}/suzantur.png` },
+  { id: 3, name: 'Maet', logo: `${process.env.PUBLIC_URL}/maet.png` },
+  { id: 4, name: 'Salute embalagens', logo: `${process.env.PUBLIC_URL}/salute.jpg` },
+  { id: 5, name: 'Aços Vital', logo: `${process.env.PUBLIC_URL}/vital.jpg` },
 ];
 
 const containerVariants = {

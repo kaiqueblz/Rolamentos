@@ -165,12 +165,28 @@ section#about p {
   text-align: center;
 }
 
+/* --- Atualização para scroll interno correto --- */
 .product-list {
   list-style: none;
   padding-left: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* REMOVIDO max-height e overflow para permitir expansão */
 }
 
+.extra-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 300px;      /* Altura máxima dos itens extras */
+  overflow-y: auto;       /* Scroll apenas nos itens extras */
+  padding-right: 5px;     
+  margin-top: 1rem;
+}
+
+/* Mantém os itens normais estilizados */
 .product-item {
   display: flex;
   flex-direction: column;
@@ -341,4 +357,25 @@ footer {
 /* Sombra por baixo para dar profundidade */
 .carousel .slide {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* BOTÃO VER MAIS / VER MENOS */
+.toggle-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(37, 99, 235, 0.3);
+}
+
+.toggle-btn:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(30, 64, 175, 0.5);
 }
